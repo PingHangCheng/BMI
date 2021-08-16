@@ -68,15 +68,20 @@ print(classlist)
 print(Datalist)
 # 6.進階練習
 print("\n✾ ✾ ✾ 進階題 ✾ ✾ ✾\n")
-# 將Datalist中 巧克力年齡改為9/12，體重改為40，身高改為153，並展示。
+# 將Datalist中 巧克力年齡改為12，體重改為40，身高改為153，並展示。
 print("-"*60)
-chocolate = BMI(Datalist[1][0], Datalist[1][1], Datalist[1][2],Datalist[1][3], Datalist[1][4])
-chocolate.Set_age(12)
-chocolate.Set_weight(40)
-chocolate.Set_height(153)
-chocolate.Show()
-print(chocolate) #chotolate是一個物件
-# 將Datalist中 香草年齡改為9/12，體重改為37，身高改為149，並展示。
+#另一作法
+# chocolate = BMI(Datalist[1][0], Datalist[1][1], Datalist[1][2],Datalist[1][3], Datalist[1][4])
+# chocolate.Set_age(12) #chotolate是一個物件
+# chocolate.Set_weight(40)
+# chocolate.Set_height(153)
+# chocolate.Show()
+classlist[1].Set_age(9/12)
+classlist[1].Set_weight(40)
+classlist[1].Set_height(153)
+classlist[1].Show()
+print(classlist[1]) 
+# 將Datalist中 香草年齡改為9，體重改為37，身高改為149，並展示。
 print("-"*60)
 classlist[2].Set_age(9)
 classlist[2].Set_weight(37)
